@@ -1,0 +1,165 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-padding-top: 70px;
+    /* height of your navbar */
+}
+
+
+h1,
+p,
+button {
+    overflow-wrap: anywhere;
+}
+
+.navbar_icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.portfolio_website_navbar_links:hover{
+    background-color: #FFFFFF1A; 
+    backdrop-filter: blur(1px); 
+    border-radius: 5px;
+}
+
+.portfolio_website_navbar {
+    background-color: #0000001A; 
+    backdrop-filter: blur(10px); 
+}
+
+.portfolio_website_banner_section {
+    background-image: linear-gradient(135deg, #2b2b2b, #000000);
+    min-height: 100vh;
+}
+
+.text_georgia {
+    font-family: "Georgia";
+}
+
+.text_roboto {
+    font-family: "Roboto";
+}
+
+.para_color {
+    color: #9aa5b1;
+}
+
+.portfolio_banner_img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.portfolio_banner_name {
+    font-style: italic;
+}
+
+.portfolio_website_about_me_section {
+    background-image: linear-gradient(135deg, #000000, #555555);
+}
+
+.text_italic {
+    font-style: italic;
+}
+
+.portfolio_website_skills_section {
+    background-image: linear-gradient(135deg, #434343, #000000);
+}
+
+.portfolio_website_skills_card {
+    background-color: #1e1f21;
+}
+
+.portfolio_website_skills_card:hover {
+    background-color: #2a2c2f;
+
+    .portfolio_website_skills_card_image {
+        transform: scale(1.03);
+        transition: 0.5s;
+    }
+}
+
+.portfolio_website_projects_section {
+    background-image: linear-gradient(135deg, #7a7a7a, #111111);
+}
+
+.text_shadow {
+    text-shadow: 2px 2px 0px #000000;
+}
+
+/* Portfolio Website Projects Section projects */
+
+.portfolio_website_projects_section_project_link {
+    color: #00e5ff;
+}
+
+.portfolio_website_projects_section_project_link:hover {
+    color: #00bcd4 !important;
+}
+
+.projects_section_projects_bg_image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    aspect-ratio: 16/9;
+    /* responsive box with no distortion */
+    filter: drop-shadow(5px 5px 15px #00000060);
+}
+
+.portfolio_website_service_section_bg_container {
+    background-image: linear-gradient(135deg, #5c5c5c, #0c0c0c);
+}
+
+.portfolio_website_service_section_card {
+    background-color: #323f4b;
+}
+
+.portfolio_website_service_section_card_image {
+    width: 100px;
+    height: 100px;
+}
+
+.interest_section_carousel_image {
+    height: 80vh;
+}
+
+.portfolio_website_interests_section {
+    background-image: linear-gradient(135deg, #2c2c2c, #1b262c);
+}
+
+.portfolio_website_work_done_section {
+    background-image: url('https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-work-done-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-position: center;
+}
+
+.portfolio_website_work_done_section_icon {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.portfolio_website_work_done_section_hr {
+    border: 2px solid white;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.portfolio_website_footer_section_bg_container {
+    background-image: linear-gradient(135deg, #0d2436, #001c32);
+}
+
+.footer_section_image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
