@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Title -->
+    <title>Portfolio Website</title>
+
+    <!-- For responsive  -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- FontAwesome Kit -->
+    <script src="https://kit.fontawesome.com/23d3da6a4a.js" crossorigin="anonymous"></script>
+
+    <!-- Link with CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- Portfolio Website Banner Section -->
+    <div class="portfolio_website_banner_section pt-5 pb-5 d-flex flex-column justify-content-center align-items-center"
+        id="portfoliowebsitebannersection">
+        <!-- Navbar Section -->
+        <nav class="navbar navbar-expand-lg navbar-dark shadow-lg fixed-top portfolio_website_navbar">
+            <div class="container">
+                <a class="navbar-brand text-center" href="#">
+                    <img src="https://img.freepik.com/free-psd/gradient-versus-logo-template_23-2151514124.jpg?semt=ais_hybrid&w=740&q=80"
+                        alt="Logo" class="navbar_icon" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active text-white portfolio_website_navbar_links" aria-current="page"
+                            href="#portfoliowebsitebannersection">Home</a>
+                        <a class="nav-link text-white portfolio_website_navbar_links"
+                            href="#portfoliowebsiteaboutmesection">About me</a>
+                        <a class="nav-link text-white portfolio_website_navbar_links"
+                            href="#portfoliowebsiteprojectssection">Projects</a>
+                        <a class="nav-link text-white portfolio_website_navbar_links"
+                            href="#portfoliowebsiteservicesection">Services</a>
+                        <a class="nav-link text-white portfolio_website_navbar_links"
+                            href="#portfoliowebsiteinterestssection">Interests</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Warning Toast -->
+        <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100 pt-5">
+            <div id="helloToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto text-danger fs-4 fw-bold">Note</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="p-3 overflow-auto" style="max-width: 100%; max-height: 250px;">
+                    <h1 class="text-dark fs-6">The wrong use of the website data will be punished</h1>
+                    <h1 class="text-dark fs-6">We have collected your whole data on navigating through this website.
+                    </h1>
+                    <h1 class="text-dark fs-6">This website is only for experiencing the bootstrap responsive tools and
+                        fun as well</h1>
+                    <h1 class="text-dark fs-6">To see the responsive modes of website please navigate with the developer
+                        tools</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner Content -->
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-12 col-md-6 order-md-2">
+                    <div class="pt-5 text-center">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-banner-img.png"
+                            class="img-fluid w-75 w-md-100 portfolio_banner_img" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 order-md-1 d-flex flex-column justify-content-center">
+                    <div class="mt-5 mt-md-0 text-center text-md-start">
+                        <h1 class="text-white fs-1 fw-bold text_georgia">Hey, I am <span
+                                class="text-primary portfolio_banner_name">Vighnesh</span></h1>
+                        <p class="text_roboto para_color">I am a Frontend Developer & Student.</p>
+                        <button type="button" class="btn btn-primary text-center text-white" id="liveToastBtn">Contact
+                            Me</button>
+                    </div>
+                </div>
+
+                <!-- Portfolio Banner Contact me Toast -->
+                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header d-flex flex-row justify-content-between">
+                            <h1 class="text-dark fw-bold fs-3 text-center">VS</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                        <div class="toast-body">
+                            <div>
+                                <h1 class="text-dark fs-6 text_roboto">Name : Vighnesh Sani</h1>
+                                <h1 class="text-dark fs-6 text_roboto">Phone No : 8237445797</h1>
+                                <a href="mailto:vighneshsani01@gmail.com" class="fs-6 text_roboto">Email :
+                                    vighneshsani01@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me section -->
+    <div id="portfoliowebsiteaboutmesection">
+        <div class="portfolio_website_about_me_section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="w-100 d-none d-md-block">
+                            <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763019954/WhatsApp_Image_2025-11-13_at_13.14.19_2194c89c_rivkw1.jpg"
+                                class="w-100 rounded-4" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="w-100">
+                            <h1 class="text_roboto text-warning fs-4 mb-md-4">Facts</h1>
+                            <h1 class="text_georgia text-white fs-1 fw-bold mb-md-4">About me</h1>
+                            <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763019954/WhatsApp_Image_2025-11-13_at_13.14.19_2194c89c_rivkw1.jpg"
+                                class="w-100 d-md-none mb-4 mt-4 rounded-4" />
+                            <p class="text_roboto para_color fs-6 mb-md-4">My name is <span
+                                    class="text-primary fw-bold text_italic">Vighnesh Sani</span>, and I am currently
+                                looking for a Internships in Frontend Development. I
+                                have <span class="text-white">2 years of experience</span> working on a
+                                Frontend Development. I have a <span class="text-white">Diaploma Undergraduate degree
+                                    in Information And communication Technology (IT)</span>. People
+                                find me to be an upbeat, self-motivated team
+                                player with <span class="text-white">excellent communication skills.</span></p>
+                            <p class="text_roboto para_color fs-6 mb-md-4">I am a dedicated person with a family of
+                                Five. I
+                                enjoy reading, and the knowledge and
+                                perspective that my reading gives me have
+                                strengthened my <span class="text-white">teaching skills and
+                                    presentation abilities.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section Skills Section -->
+    <div class="portfolio_website_skills_section pt-5 pb-5" id="portfoliowebsiteskillssection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mb-4">
+                        <h1 class="fs-1 text-warning fw-bold text_georgia">Skills</h1>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="text-center portfolio_website_skills_card rounded-4 shadow-lg p-4 mb-4"
+                        data-bs-target="#offcanvasTop1" aria-controls="offcanvasTop1" data-bs-toggle="offcanvas">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-skills-html-img.png"
+                            class="w-100 rounded-5 portfolio_website_skills_card_image" />
+                        <h1 class="text_roboto fs-6 fw-bold text-info mt-3 mb-0">HTML</h1>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="text-center portfolio_website_skills_card rounded-4 shadow-lg p-4 mb-4"
+                        data-bs-target="#offcanvasTop2" aria-controls="offcanvasTop2" data-bs-toggle="offcanvas">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-skills-css-img.png"
+                            class="w-100 rounded-5 portfolio_website_skills_card_image" />
+                        <h1 class="text_roboto fs-6 fw-bold text-info mt-3 mb-0">CSS</h1>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="text-center portfolio_website_skills_card rounded-4 shadow-lg p-4 mb-4"
+                        data-bs-target="#offcanvasTop3" aria-controls="offcanvasTop3" data-bs-toggle="offcanvas">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-skills-bootstrap-img.png"
+                            class="w-100 rounded-5 portfolio_website_skills_card_image" />
+                        <h1 class="text_roboto fs-6 fw-bold text-info mt-3 mb-0">BOOTSTRAP</h1>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="text-center portfolio_website_skills_card rounded-4 shadow-lg p-4 mb-4"
+                        data-bs-target="#offcanvasTop4" aria-controls="offcanvasTop4" data-bs-toggle="offcanvas">
+                        <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-skills-js-img.png"
+                            class="w-100 rounded-5 portfolio_website_skills_card_image" />
+                        <h1 class="text_roboto fs-6 fw-bold text-info mt-3 mb-0">JS</h1>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="text-center portfolio_website_skills_card rounded-4 shadow-lg p-4 mb-4"
+                        data-bs-target="#offcanvasTop5" aria-controls="offcanvasTop5" data-bs-toggle="offcanvas">
+                        <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763023996/Screenshot_2025-11-13_141701_ugazbe.png"
+                            class="w-100 rounded-5 portfolio_website_skills_card_image" />
+                        <h1 class="text_roboto fs-6 fw-bold text-info mt-3 mb-0">C</h1>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="text-center portfolio_website_skills_card rounded-4 shadow-lg p-4 mb-4"
+                        data-bs-target="#offcanvasTop6" aria-controls="offcanvasTop6" data-bs-toggle="offcanvas">
+                        <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763023996/Screenshot_2025-11-13_141412_ekueef.png"
+                            class="w-100 rounded-5 portfolio_website_skills_card_image" />
+                        <h1 class="text_roboto fs-6 fw-bold text-info mt-3 mb-0">C++</h1>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="text-center portfolio_website_skills_card rounded-4 shadow-lg p-4 mb-4"
+                        data-bs-target="#offcanvasTop7" aria-controls="offcanvasTop7" data-bs-toggle="offcanvas">
+                        <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763023992/Screenshot_2025-11-13_141136_oq7uth.png"
+                            class="w-100 rounded-5 portfolio_website_skills_card_image" />
+                        <h1 class="text_roboto fs-6 fw-bold text-info mt-3 mb-0">JAVA</h1>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="text-center portfolio_website_skills_card rounded-4 shadow-lg p-4 mb-4"
+                        data-bs-target="#offcanvasTop8" aria-controls="offcanvasTop8" data-bs-toggle="offcanvas">
+                        <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763023991/Screenshot_2025-11-13_141128_tfmu5x.png"
+                            class="w-100 rounded-5 portfolio_website_skills_card_image" />
+                        <h1 class="text_roboto fs-6 fw-bold text-info mt-3 mb-0">PYTHON</h1>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="text-center portfolio_website_skills_card rounded-4 shadow-lg p-4 mb-4"
+                        data-bs-target="#offcanvasTop9" aria-controls="offcanvasTop9" data-bs-toggle="offcanvas">
+                        <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763024161/WhatsApp_Image_2025-11-13_at_14.25.27_7690d684_hilzdd.jpg"
+                            class="w-100 rounded-5 portfolio_website_skills_card_image" />
+                        <h1 class="text_roboto fs-6 fw-bold text-info mt-3 mb-0">DSA</h1>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="text-center portfolio_website_skills_card rounded-4 shadow-lg p-4 mb-4"
+                        data-bs-target="#offcanvasTop10" aria-controls="offcanvasTop10" data-bs-toggle="offcanvas">
+                        <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763024566/Screenshot_2025-11-13_143226_m6i0fp.png"
+                            class="w-100 rounded-5 portfolio_website_skills_card_image" />
+                        <h1 class="text_roboto fs-6 fw-bold text-info mt-3 mb-0">LINUX</h1>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="text-center portfolio_website_skills_card rounded-4 shadow-lg p-4 mb-4"
+                        data-bs-target="#offcanvasTop11" aria-controls="offcanvasTop11" data-bs-toggle="offcanvas">
+                        <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763023993/Screenshot_2025-11-13_141353_b7kp7b.png"
+                            class="w-100 rounded-5 portfolio_website_skills_card_image" />
+                        <h1 class="text_roboto fs-6 fw-bold text-info mt-3 mb-0">SQL</h1>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="text-center portfolio_website_skills_card rounded-4 shadow-lg p-4 mb-4"
+                        data-bs-target="#offcanvasTop12" aria-controls="offcanvasTop12" data-bs-toggle="offcanvas">
+                        <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763025690/WhatsApp_Image_2025-11-13_at_14.50.08_908452a5_zjyu6x.jpg"
+                            class="w-100 rounded-5 portfolio_website_skills_card_image" />
+                        <h1 class="text_roboto fs-6 fw-bold text-info mt-3 mb-0">PLSQL</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- skills section offcanvas bundles -->
+        <div class="offcanvas offcanvas-top min-vh-100 skills_offcanvas" tabindex="-1" id="offcanvasTop1"
+            aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-2 text_georgia fw-bold" id="offcanvasTopLabel">HTML</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="filter: invert(1) brightness(200%) !important;"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container">
+                    <div class="row vh-md-100">
+                        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                            <div class="text-center mb-5 mb-md-0">
+                                <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-skills-html-img.png"
+                                    class="w-75 w-md-100 rounded-5" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-7 col-xl-8">
+                            <div class="vh-md-100 overflow-auto" style="scrollbar-width: none;">
+                                <p class="text_roboto fs-6 mb-4">HTML, or HyperText Markup Language, is the foundational
+                                    language used to build and structure content on the web. It acts as the backbone of
+                                    every website, determining how text, images, links, multimedia, and other elements
+                                    are organized and displayed in a browser. Rather than functioning as a programming
+                                    language, HTML serves as a markup system, meaning its main purpose is to describe
+                                    the structure and meaning of content. Web browsers read HTML documents and interpret
+                                    their structure to present the webpage visually to users. An HTML file is arranged
+                                    in a clear hierarchy that includes document information, metadata, titles, and all
+                                    the visible content that appears on the screen. This structured arrangement helps
+                                    browsers understand which parts of the page are headings, paragraphs, sections,
+                                    images, or navigation elements.</p>
+                                <p class="text_roboto fs-6 mb-4">HTML has developed significantly since its early
+                                    versions, with HTML5 being the most advanced and widely used edition today. HTML5
+                                    introduced meaningful structural elements that help define different parts of a
+                                    webpage more clearly. It improved accessibility and made it easier for search
+                                    engines and assistive technologies to analyze and navigate content. This version
+                                    also enhanced multimedia handling by providing native support for audio, video,
+                                    animation, and graphic rendering without the need for external plugins. Forms became
+                                    more powerful and user-friendly with the introduction of specialized input formats,
+                                    making data collection smoother and more accurate.</p>
+                                <p class="text_roboto fs-6 mb-4">Another major advantage of HTML is its ability to work
+                                    seamlessly with other web technologies. It provides the structure, while CSS handles
+                                    styling and layout, and JavaScript enables interactivity and dynamic behavior.
+                                    Together, these three technologies form the core of front-end web development. HTML
+                                    also plays a crucial role in responsive web design, allowing webpages to adapt to
+                                    different screen sizes and devices when combined with modern styling techniques.
+                                    Additionally, proper use of HTML contributes to better search engine optimization,
+                                    as search engines rely heavily on the structure and clarity of webpage content to
+                                    understand and index information accurately.</p>
+                                <p class="text_roboto fs-6 mb-4">Overall, HTML is a fundamental skill for anyone
+                                    interested in web development. It allows developers to create well-organized,
+                                    accessible, and visually coherent webpages and serves as the foundation upon which
+                                    every modern website is built.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-top min-vh-100 skills_offcanvas" tabindex="-1" id="offcanvasTop2"
+            aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-2 text_georgia fw-bold" id="offcanvasTopLabel">CSS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="filter: invert(1) brightness(200%) !important;"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container">
+                    <div class="row vh-md-100">
+                        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                            <div class="text-center mb-5 mb-md-0">
+                                <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-skills-css-img.png"
+                                    class="w-75 w-md-100 rounded-5" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-7 col-xl-8">
+                            <div class="vh-md-100 overflow-auto" style="scrollbar-width: none;">
+                                <p class="text_roboto fs-6 mb-4">CSS, or Cascading Style Sheets, is the language used to
+                                    control the visual presentation, layout, and overall design of webpages. While HTML
+                                    defines the structure of a webpage, CSS defines how that structure should look—its
+                                    colors, spacing, alignment, fonts, background effects, animations, and
+                                    responsiveness. CSS works by applying styles to selected elements in a webpage, and
+                                    these styles “cascade,” meaning they are applied based on a set of priority rules.
+                                    This cascading mechanism allows developers to manage complex designs while keeping
+                                    the code clean and organized. CSS gives designers complete control over visual
+                                    aesthetics, enabling them to transform a simple, plain webpage into a polished and
+                                    modern interface. Everything from text appearance to page layout, button shapes,
+                                    card shadows, gradient backgrounds, animations, transitions, and grid systems is
+                                    handled through CSS.</p>
+                                <p class="text_roboto fs-6 mb-4">Modern CSS has evolved significantly and now supports
+                                    advanced features that make web design more efficient and powerful. One major
+                                    capability is responsive design, where CSS automatically adjusts the layout based on
+                                    the device’s screen size—whether it’s a phone, tablet, or large desktop monitor.
+                                    This is achieved through flexible measurements, fluid grids, and conditional styling
+                                    rules that activate under specific screen widths. CSS also offers layout systems
+                                    like Flexbox and Grid, which simplify the creation of complex, multi-section page
+                                    structures that were previously difficult to design. These systems help developers
+                                    center items easily, create equal-height columns, design dynamic grids, and maintain
+                                    consistent spacing across the entire webpage.</p>
+                                <p class="text_roboto fs-6 mb-4">With CSS, designers can apply visual enhancements such
+                                    as soft shadows, smooth hover effects, 3D transformations, glowing borders,
+                                    animations, and layered backgrounds, making websites more interactive and appealing.
+                                    CSS also plays a key role in improving user experience by defining spacing,
+                                    readability, button sizes, and accessible color contrast. Another benefit of CSS is
+                                    separation of concerns: the style is kept separate from the structure, making it
+                                    easier to maintain, update, or completely redesign a site without altering its core
+                                    content. Moreover, external style sheets allow multiple webpages to share the same
+                                    visual formatting, ensuring consistency and reducing repetitive work.</p>
+                                <p class="text_roboto fs-6 mb-4">Overall, CSS is an essential tool for front-end
+                                    development. It provides the creative power behind modern web design, enabling
+                                    developers to build visually impressive, responsive, user-friendly, and
+                                    professional-looking websites.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-top min-vh-100 skills_offcanvas" tabindex="-1" id="offcanvasTop3"
+            aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-2 text_georgia fw-bold" id="offcanvasTopLabel">BOOTSTRAP</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="filter: invert(1) brightness(200%) !important;"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container">
+                    <div class="row vh-md-100">
+                        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                            <div class="text-center mb-5 mb-md-0">
+                                <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-skills-bootstrap-img.png"
+                                    class="w-75 w-md-100 rounded-5" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-7 col-xl-8">
+                            <div class="vh-md-100 overflow-auto" style="scrollbar-width: none;">
+                                <p class="text_roboto fs-6 mb-4">Bootstrap is a popular front-end framework designed to
+                                    make website development faster, easier, and more consistent. It provides a
+                                    collection of ready-made design components, layout tools, and utility classes that
+                                    allow developers to build modern, responsive, and visually appealing websites
+                                    without starting from scratch. Originally created by Twitter, Bootstrap has become
+                                    one of the most widely used frameworks in web development because it simplifies many
+                                    common design tasks. Instead of manually creating layouts or designing buttons,
+                                    navigation bars, forms, or cards from the ground up, developers can use Bootstrap’s
+                                    predefined components that follow professional design standards. This not only
+                                    speeds up the development process but also ensures that the finished website has a
+                                    clean, uniform, and polished appearance across all pages.</p>
+                                <p class="text_roboto fs-6 mb-4">One of the strongest features of Bootstrap is its
+                                    responsive grid system, which enables webpages to automatically adjust their layout
+                                    according to the screen size of the device. Whether a user opens a website on a
+                                    mobile phone, tablet, laptop, or large desktop monitor, Bootstrap ensures that the
+                                    content rearranges itself neatly and remains readable without additional coding.
+                                    This makes Bootstrap especially valuable in a world where mobile-first design is
+                                    essential. The framework also includes various utility classes that help control
+                                    spacing, alignment, colors, backgrounds, borders, and typography with minimal
+                                    effort. These utilities allow developers to make quick visual adjustments without
+                                    writing custom styles.</p>
+                                <p class="text_roboto fs-6 mb-4">In addition to layout and utilities, Bootstrap offers a
+                                    wide range of pre-built interactive components such as dropdown menus, collapsible
+                                    sections, sliders, modals, alerts, tooltips, and offcanvas panels. These components
+                                    are powered by lightweight JavaScript and enhance user experience by adding smooth
+                                    interactions and dynamic behavior to webpages. Developers can customize Bootstrap to
+                                    match the branding of any website by adjusting color themes, fonts, and spacing
+                                    rules, either through its official customization tools or with additional styling.
+                                </p>
+                                <p class="text_roboto fs-6 mb-4">Overall, Bootstrap provides a solid foundation for both
+                                    beginners and professionals. It balances simplicity with flexibility, making it
+                                    possible to build anything from small personal sites to large, complex web
+                                    applications. By reducing repetitive work and ensuring consistent design, Bootstrap
+                                    has become an essential tool in modern front-end development, helping developers
+                                    create responsive, functional, and attractive websites with far less effort.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-top min-vh-100 skills_offcanvas" tabindex="-1" id="offcanvasTop4"
+            aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-2 text_georgia fw-bold" id="offcanvasTopLabel">JS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="filter: invert(1) brightness(200%) !important;"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container">
+                    <div class="row vh-md-100">
+                        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                            <div class="text-center mb-5 mb-md-0">
+                                <img src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/portfolio-skills-js-img.png"
+                                    class="w-75 w-md-100 rounded-5" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-7 col-xl-8">
+                            <div class="vh-md-100 overflow-auto" style="scrollbar-width: none;">
+                                <p class="text_roboto fs-6 mb-4">JavaScript is a powerful and essential programming
+                                    language used to add interactivity, logic, and dynamic behavior to webpages. While
+                                    HTML provides structure and CSS controls appearance, JavaScript enables websites to
+                                    respond to user actions, update content instantly, and perform tasks without
+                                    reloading the page. It is a client-side language, meaning it mostly runs directly
+                                    inside the user’s web browser, allowing for fast and interactive experiences.
+                                    JavaScript can detect user events such as clicks, typing, scrolling, or hovering,
+                                    and then react accordingly—by showing pop-ups, changing content, validating forms,
+                                    playing animations, or loading new data. This makes it a core technology behind
+                                    modern web development and a crucial skill for anyone involved in building websites
+                                    or web applications.</p>
+                                <p class="text_roboto fs-6 mb-4">Over time, JavaScript has grown far beyond simple
+                                    browser interactions. It now powers both front-end and back-end development due to
+                                    the introduction of powerful engines and environments like Node.js. This means
+                                    developers can use JavaScript to build everything from interactive user interfaces
+                                    to full server-side systems, APIs, real-time applications, and even mobile or
+                                    desktop apps. Modern JavaScript supports advanced concepts such as asynchronous
+                                    programming, which allows websites to load data in the background without freezing
+                                    the page. This capability is what enables features like live chat, auto-refreshing
+                                    feeds, interactive dashboards, and smooth online experiences.</p>
+                                <p class="text_roboto fs-6 mb-4">In addition to the core language, JavaScript has a
+                                    massive ecosystem of frameworks and libraries that accelerate development. Tools
+                                    like React, Angular, and Vue help developers build complex interfaces efficiently,
+                                    while libraries like jQuery simplify common tasks. JavaScript is also deeply
+                                    integrated with browser features, allowing access to device capabilities such as
+                                    camera, microphone, local storage, and notifications. These features enable the
+                                    creation of smart, app-like experiences directly in the browser.</p>
+                                <p class="text_roboto fs-6 mb-4">Another major advantage of JavaScript is its
+                                    flexibility. It supports multiple programming styles—procedural, functional, and
+                                    object-oriented—making it adaptable for different types of projects. It also plays a
+                                    key role in improving user experience by enabling smooth animations, dynamic
+                                    layouts, instant updates, and personalized content.</p>
+                                <p class="text_roboto fs-6 mb-4">Overall, JavaScript is one of the most important
+                                    technologies in the digital world. It brings life to websites, powers modern web
+                                    applications, and provides the foundation for many interactive experiences that
+                                    users rely on every day.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-top min-vh-100 skills_offcanvas" tabindex="-1" id="offcanvasTop5"
+            aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-2 text_georgia fw-bold" id="offcanvasTopLabel">C</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="filter: invert(1) brightness(200%) !important;"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container">
+                    <div class="row vh-md-100">
+                        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                            <div class="text-center mb-5 mb-md-0">
+                                <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763023996/Screenshot_2025-11-13_141701_ugazbe.png"
+                                    class="w-75 w-md-100 rounded-5" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-7 col-xl-8">
+                            <div class="vh-md-100 overflow-auto" style="scrollbar-width: none;">
+                                <p class="text_roboto fs-6 mb-4">C is one of the oldest, most powerful, and most
+                                    influential programming languages in the world, widely regarded as the foundation of
+                                    modern software development. Created in the early 1970s by Dennis Ritchie at Bell
+                                    Labs, C was designed for building system-level programs such as operating systems,
+                                    compilers, and embedded systems. Its biggest strength lies in how close it is to
+                                    hardware while still being easier to write than low-level assembly language. This
+                                    balance allows programmers to have precise control over memory, data, and system
+                                    resources, which is why C is often used in performance-critical applications. Many
+                                    of today’s most important technologies—including operating systems like Windows,
+                                    Linux, and macOS, as well as programming languages like C++, Java, Python, and
+                                    JavaScript—were either written in C or heavily inspired by it.</p>
+                                <p class="text_roboto fs-6 mb-4">C is known for its simplicity, efficiency, and
+                                    portability. Once a program is written in C, it can be compiled and run on many
+                                    different systems with minimal modification, making it useful for building
+                                    cross-platform software. The language follows a structured approach, allowing
+                                    developers to break down large programs into smaller, manageable functions. C gives
+                                    direct access to memory through features like pointers, which enable efficient
+                                    handling of arrays, structures, and dynamic memory. This control is extremely
+                                    powerful but also requires careful programming, as mistakes can lead to memory leaks
+                                    or errors. Because of this, learning C helps developers build a strong foundation in
+                                    logic, computer architecture, and problem-solving.</p>
+                                <p class="text_roboto fs-6 mb-4">Another important aspect of C is its role in embedded
+                                    systems—small, specialized computing devices found in cars, appliances, medical
+                                    equipment, robots, and countless electronic gadgets. These systems require high
+                                    performance and low memory usage, and C is perfectly suited for such environments.
+                                    Even today, despite the rise of many modern languages, C remains a top choice in
+                                    industries like aerospace, automotive, telecommunications, and system programming.
+                                </p>
+                                <p class="text_roboto fs-6 mb-4">Overall, C is not just a programming language; it is a
+                                    gateway to understanding how computers truly work. It teaches core concepts such as
+                                    memory management, data handling, and efficient algorithm design. Mastering C builds
+                                    a strong base that makes learning other languages easier and opens the door to a
+                                    wide range of technical fields, from software engineering to embedded system design.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-top min-vh-100 skills_offcanvas" tabindex="-1" id="offcanvasTop6"
+            aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-2 text_georgia fw-bold" id="offcanvasTopLabel">C++</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="filter: invert(1) brightness(200%) !important;"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container">
+                    <div class="row vh-md-100">
+                        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                            <div class="text-center mb-5 mb-md-0">
+                                <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763023996/Screenshot_2025-11-13_141412_ekueef.png"
+                                    class="w-75 w-md-100 rounded-5" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-7 col-xl-8">
+                            <div class="vh-md-100 overflow-auto" style="scrollbar-width: none;">
+                                <p class="text_roboto fs-6 mb-4">C++ is a powerful, high-performance programming
+                                    language widely used for building complex software systems, applications, and
+                                    real-world solutions that require both speed and efficiency. Developed by Bjarne
+                                    Stroustrup as an extension of C, C++ adds the concept of object-oriented
+                                    programming, which allows developers to structure programs using classes, objects,
+                                    inheritance, polymorphism, and encapsulation. This makes C++ ideal for large,
+                                    scalable projects where organizing code and managing complexity are crucial. Despite
+                                    being closer to hardware like the C language, C++ provides a higher level of
+                                    abstraction, enabling developers to write efficient and maintainable code while
+                                    still having deep control over memory and system resources. This combination of
+                                    object-oriented features and low-level capabilities gives C++ tremendous
+                                    versatility, allowing it to be used across multiple domains.</p>
+                                <p class="text_roboto fs-6 mb-4">C++ is known for its exceptional performance, which is
+                                    why it is a popular choice for applications such as game engines, operating systems,
+                                    databases, graphical applications, simulations, and real-time systems. Many
+                                    well-known technologies—including browsers, financial trading platforms, 3D engines,
+                                    and high-performance software—use C++ at their core. Its support for manual memory
+                                    management through features like pointers gives programmers fine control over how
+                                    data is stored and accessed, which is essential for building fast and
+                                    resource-efficient applications. At the same time, modern C++ versions introduce
+                                    advanced features like smart memory handling, templates, exception management, and
+                                    the Standard Template Library, which provides pre-built data structures and
+                                    algorithms that greatly speed up development.</p>
+                                <p class="text_roboto fs-6 mb-4">C++ continues to evolve, with modern standards such as
+                                    C++11, C++14, C++17, and C++20 introducing features that make the language safer,
+                                    more efficient, and easier to use. These improvements include better support for
+                                    concurrency, enhanced performance optimizations, cleaner syntax, and more powerful
+                                    abstractions. Another major strength of C++ is its portability; programs written in
+                                    C++ can run on many platforms with minimal changes, making it suitable for
+                                    cross-platform software development.</p>
+                                <p class="text_roboto fs-6 mb-4">Overall, C++ remains one of the most influential and
+                                    widely used programming languages in the world. It provides an excellent balance of
+                                    speed, control, and abstraction, making it ideal for both system-level programming
+                                    and large application development. Learning C++ builds strong programming
+                                    fundamentals and opens opportunities across diverse fields such as software
+                                    engineering, gaming, robotics, finance, and artificial intelligence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-top min-vh-100 skills_offcanvas" tabindex="-1" id="offcanvasTop7"
+            aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-2 text_georgia fw-bold" id="offcanvasTopLabel">JAVA</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="filter: invert(1) brightness(200%) !important;"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container">
+                    <div class="row vh-md-100">
+                        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                            <div class="text-center mb-5 mb-md-0">
+                                <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763023992/Screenshot_2025-11-13_141136_oq7uth.png"
+                                    class="w-75 w-md-100 rounded-5" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-7 col-xl-8">
+                            <div class="vh-md-100 overflow-auto" style="scrollbar-width: none;">
+                                <p class="text_roboto fs-6 mb-4">Java is a widely used, high-level, object-oriented
+                                    programming language known for its simplicity, security, and platform independence.
+                                    Developed by Sun Microsystems (now owned by Oracle), Java was built with the idea of
+                                    “write once, run anywhere,” meaning a Java program can run on any device or
+                                    operating system that has a Java Virtual Machine. This portability made Java
+                                    extremely popular for developing cross-platform applications. Java follows the
+                                    principles of object-oriented programming, including classes, objects, inheritance,
+                                    and encapsulation, which help developers write modular, reusable, and
+                                    well-structured code. It is designed to be easy to learn, especially for beginners,
+                                    and it provides a clean, readable syntax that reduces common programming errors. One
+                                    of Java’s biggest strengths is its strong memory management and automatic garbage
+                                    collection, which help prevent memory leaks and make applications more reliable.</p>
+                                <p class="text_roboto fs-6 mb-4">Java is widely adopted in many fields, making it one of
+                                    the most versatile programming languages in the world. It is heavily used in
+                                    enterprise-level applications, banking systems, billing software, and large-scale
+                                    business solutions because of its stability, security features, and ability to
+                                    handle huge amounts of data. Many well-known companies rely on Java to build
+                                    servers, backend systems, and cloud-based applications. Java also plays a major role
+                                    in Android development; most native Android apps are built using Java, which has
+                                    made the language hugely popular among mobile developers. In addition, Java is used
+                                    in scientific computing, machine learning frameworks, distributed systems, and even
+                                    embedded devices.</p>
+                                <p class="text_roboto fs-6 mb-4">Another major advantage of Java is its rich ecosystem
+                                    and extensive standard library. Developers have access to thousands of prebuilt
+                                    classes, tools, and frameworks that simplify complex tasks such as networking,
+                                    database connectivity, encryption, and multithreading. Popular frameworks like
+                                    Spring, Hibernate, and JavaFX allow developers to build powerful, scalable, and
+                                    interactive applications more efficiently. Java also supports multithreading,
+                                    meaning it can perform many tasks simultaneously—an essential feature for
+                                    high-performance applications.</p>
+                                <p class="text_roboto fs-6 mb-4">Overall, Java is a reliable, secure, and highly
+                                    versatile programming language that remains one of the top choices for developers
+                                    worldwide. Its platform independence, strong community support, and ability to build
+                                    everything from mobile apps to large enterprise systems make it a valuable skill for
+                                    anyone pursuing a career in software development.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-top min-vh-100 skills_offcanvas" tabindex="-1" id="offcanvasTop8"
+            aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-2 text_georgia fw-bold" id="offcanvasTopLabel">PYTHON</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="filter: invert(1) brightness(200%) !important;"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container">
+                    <div class="row vh-md-100">
+                        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                            <div class="text-center mb-5 mb-md-0">
+                                <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763023991/Screenshot_2025-11-13_141128_tfmu5x.png"
+                                    class="w-75 w-md-100 rounded-5" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-7 col-xl-8">
+                            <div class="vh-md-100 overflow-auto" style="scrollbar-width: none;">
+                                <p class="text_roboto fs-6 mb-4">Python is one of the most popular and versatile
+                                    programming languages in the world, known for its simplicity, readability, and wide
+                                    range of applications. Designed by Guido van Rossum in the early 1990s, Python
+                                    emphasizes clear and easy-to-understand syntax, making it an ideal choice for
+                                    beginners as well as experienced developers. Its clean structure allows programmers
+                                    to focus more on solving problems rather than struggling with complex language
+                                    rules. Python is a high-level, interpreted language, meaning programs run directly
+                                    without a separate compilation step. This makes development faster and more
+                                    flexible, allowing immediate testing and debugging. One of Python’s greatest
+                                    strengths is its extensive standard library and massive ecosystem of external
+                                    packages, which provide tools for almost every task imaginable, from handling files
+                                    and databases to performing scientific computations and creating graphical
+                                    applications.</p>
+                                <p class="text_roboto fs-6 mb-4">Python is widely used across many industries due to its
+                                    versatility. In web development, frameworks like Django and Flask help developers
+                                    build secure and efficient websites. In data science and machine learning, Python is
+                                    the dominant language thanks to powerful libraries that enable data analysis,
+                                    visualization, artificial intelligence, and predictive modeling. Scientists,
+                                    researchers, and analysts rely on Python to process large datasets, run simulations,
+                                    and build intelligent systems. Python is also heavily used in automation; many
+                                    professionals create scripts to automate repetitive tasks, manage files, analyze
+                                    logs, or interact with system processes. In addition, Python plays a major role in
+                                    fields like cybersecurity, robotics, game development, cloud computing, and network
+                                    programming.</p>
+                                <p class="text_roboto fs-6 mb-4">Another key advantage of Python is its strong community
+                                    support. Millions of developers contribute tools, tutorials, and resources, making
+                                    it easy for learners to find guidance. The language also runs on multiple platforms,
+                                    allowing programs to work across Windows, macOS, Linux, and even mobile or embedded
+                                    systems with little to no modification. Python supports different programming
+                                    styles—procedural, object-oriented, and functional—giving developers flexibility in
+                                    how they design solutions.</p>
+                                <p class="text_roboto fs-6 mb-4">Overall, Python's simplicity, power, and broad
+                                    applicability have made it one of the most important languages in modern technology.
+                                    Whether used for small scripts, large applications, cutting-edge AI models, or
+                                    automation tasks, Python offers the tools and flexibility needed to build almost
+                                    anything, making it an essential skill for today’s developers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-top min-vh-100 skills_offcanvas" tabindex="-1" id="offcanvasTop9"
+            aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-2 text_georgia fw-bold" id="offcanvasTopLabel">DSA</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="filter: invert(1) brightness(200%) !important;"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container">
+                    <div class="row vh-md-100">
+                        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                            <div class="text-center mb-5 mb-md-0">
+                                <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763024161/WhatsApp_Image_2025-11-13_at_14.25.27_7690d684_hilzdd.jpg"
+                                    class="w-75 w-md-100 rounded-5" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-7 col-xl-8">
+                            <div class="vh-md-100 overflow-auto" style="scrollbar-width: none;">
+                                <p class="text_roboto fs-6 mb-4">Data structures are fundamental concepts in computer
+                                    science that define how data is organized, stored, and accessed efficiently in a
+                                    program. They provide a systematic way to manage large amounts of information so
+                                    that operations like searching, sorting, inserting, and deleting can be performed
+                                    quickly and effectively. Without proper data structures, even simple tasks would
+                                    become slow and inefficient, especially as the amount of data grows. Data structures
+                                    act as the building blocks of algorithms and are essential for solving complex
+                                    computational problems. They determine how information is arranged in memory and how
+                                    different pieces of data relate to one another, making them crucial for writing
+                                    optimized and scalable software. Some of the most common data structures include
+                                    arrays, linked lists, stacks, queues, trees, graphs, hash tables, and heaps, each
+                                    designed for specific types of operations and problems.</p>
+                                <p class="text_roboto fs-6 mb-4">Each data structure has its own strengths and
+                                    weaknesses. For example, arrays allow fast access to elements but have fixed size,
+                                    while linked lists offer dynamic size but slower access. Stacks and queues are used
+                                    to manage data in specific orders, such as last-in-first-out or first-in-first-out,
+                                    and are widely used in tasks like function call management, scheduling, and
+                                    buffering. Trees are hierarchical structures that help represent relationships,
+                                    making them useful in file systems, decision making, and search operations. Binary
+                                    search trees, AVL trees, and red-black trees are specialized versions that provide
+                                    efficient search and insert operations. Graphs represent connections between
+                                    elements, making them essential for modeling networks, social media connections,
+                                    maps, and routing algorithms. Hash tables offer extremely fast data retrieval based
+                                    on keys and are used in databases, caching, and dictionaries.</p>
+                                <p class="text_roboto fs-6 mb-4">Data structures also play a major role in algorithm
+                                    design. Choosing the right structure can significantly improve performance and
+                                    reduce resource usage. Efficient algorithms depend heavily on how data is arranged;
+                                    for instance, sorting and searching become far more effective when supported by
+                                    suitable structures. Understanding data structures helps developers write programs
+                                    that handle real-world workloads, such as managing web servers, processing
+                                    large-scale datasets, building compilers, creating game engines, and designing
+                                    operating systems.</p>
+                                <p class="text_roboto fs-6 mb-4">Overall, data structures form the backbone of efficient
+                                    programming and problem-solving. They not only enhance the performance of software
+                                    but also help developers think logically, design better systems, and create
+                                    solutions that are both powerful and scalable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-top min-vh-100 skills_offcanvas" tabindex="-1" id="offcanvasTop10"
+            aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-2 text_georgia fw-bold" id="offcanvasTopLabel">LINUX</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="filter: invert(1) brightness(200%) !important;"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container">
+                    <div class="row vh-md-100">
+                        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                            <div class="text-center mb-5 mb-md-0">
+                                <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763023992/Screenshot_2025-11-13_141316_hxxuxs.png"
+                                    class="w-75 w-md-100 rounded-5" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-7 col-xl-8">
+                            <div class="vh-md-100 overflow-auto" style="scrollbar-width: none;">
+                                <p class="text_roboto fs-6 mb-4">Linux is a powerful, open-source operating system
+                                    widely known for its stability, security, flexibility, and performance. Based on the
+                                    Unix philosophy, Linux provides a simple yet efficient environment where everything
+                                    is treated as a file, making it highly organized and predictable. It was created by
+                                    Linus Torvalds in 1991 and has since grown into one of the most important
+                                    technologies in the world, powering everything from personal computers and servers
+                                    to smartphones, supercomputers, cloud systems, and embedded devices. One of the
+                                    biggest advantages of Linux is that it is open-source, meaning its source code is
+                                    freely available to anyone. This allows developers and organizations to study it,
+                                    modify it, and build custom versions tailored to specific needs. As a result, many
+                                    distributions—such as Ubuntu, Fedora, Debian, Red Hat, Kali, and Arch—exist, each
+                                    designed for different purposes like daily use, security testing, enterprise
+                                    environments, or lightweight systems.</p>
+                                <p class="text_roboto fs-6 mb-4">Linux is known for its exceptional reliability and
+                                    security. It is far less vulnerable to viruses and malware compared to many other
+                                    operating systems due to its permission-based structure and strong community
+                                    oversight. This makes it the preferred choice for servers, data centers, and
+                                    mission-critical environments where uptime and safety are essential. In fact, most
+                                    websites, cloud platforms, banking systems, and scientific computing environments
+                                    run on Linux because of its ability to handle massive workloads and operate
+                                    continuously without crashes. Linux also supports powerful command-line tools that
+                                    allow users to manage files, automate tasks, control processes, and configure the
+                                    system at a very deep level. This makes it extremely popular among developers,
+                                    system administrators, ethical hackers, and engineers.</p>
+                                <p class="text_roboto fs-6 mb-4">Another major strength of Linux is its performance and
+                                    efficiency. It can run on both high-end machines and very old, low-spec hardware,
+                                    making it ideal for reviving outdated computers or powering embedded devices like
+                                    routers, smart TVs, and industrial machines. Linux also supports a wide range of
+                                    programming languages and development tools, making it a favorite environment for
+                                    software development, cloud computing, artificial intelligence, and DevOps
+                                    workflows.</p>
+                                <p class="text_roboto fs-6 mb-4">Overall, Linux is more than just an operating system;
+                                    it is a global ecosystem maintained by millions of contributors. Its reliability,
+                                    flexibility, and open-source nature make it a cornerstone of modern computing and an
+                                    essential skill for anyone interested in technology, programming, cybersecurity, or
+                                    system administration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-top min-vh-100 skills_offcanvas" tabindex="-1" id="offcanvasTop11"
+            aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-2 text_georgia fw-bold" id="offcanvasTopLabel">SQL</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="filter: invert(1) brightness(200%) !important;"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container">
+                    <div class="row vh-md-100">
+                        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                            <div class="text-center mb-5 mb-md-0">
+                                <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763023993/Screenshot_2025-11-13_141353_b7kp7b.png"
+                                    class="w-75 w-md-100 rounded-5" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-7 col-xl-8">
+                            <div class="vh-md-100 overflow-auto" style="scrollbar-width: none;">
+                                <p class="text_roboto fs-6 mb-4">SQL, or Structured Query Language, is a powerful and
+                                    widely used language for managing and manipulating data stored in relational
+                                    database systems. It provides a standardized way to interact with databases,
+                                    allowing users to store, retrieve, update, and delete data with precision and
+                                    efficiency. SQL works based on tables, where data is organized into rows and
+                                    columns, making it easy to maintain relationships between different pieces of
+                                    information. Because relational databases are used in almost every industry—such as
+                                    banking, e-commerce, healthcare, education, and social media—SQL has become an
+                                    essential skill for developers, analysts, and anyone working with large volumes of
+                                    data. Its ability to handle structured data reliably has made it the backbone of
+                                    many popular database systems like MySQL, PostgreSQL, Oracle, SQL Server, and
+                                    SQLite.</p>
+                                <p class="text_roboto fs-6 mb-4">One of SQL’s biggest strengths is its simplicity. Even
+                                    complex operations such as filtering data, joining multiple tables, grouping
+                                    information, or performing calculations can be achieved using clear, readable
+                                    commands. SQL supports various operations that help users answer questions like
+                                    which products sold most, how many customers signed up last month, or what the
+                                    average salary of employees is. It also allows database administrators to manage
+                                    user access, create backups, enforce data integrity rules, and ensure that the
+                                    system runs efficiently and securely. SQL plays a major role in maintaining the
+                                    accuracy and consistency of data, especially when multiple users or applications
+                                    access the same database simultaneously.</p>
+                                <p class="text_roboto fs-6 mb-4">SQL is also highly scalable, making it suitable for
+                                    both small applications and extremely large systems handling millions of records.
+                                    Modern technologies like data warehouses, business intelligence tools, analytics
+                                    platforms, and enterprise applications rely heavily on SQL to manage and analyze
+                                    data. Even in fields like machine learning and big data, where new tools and
+                                    languages have emerged, SQL remains relevant because structured data still forms a
+                                    large part of business operations. Its stable, standardized nature ensures that SQL
+                                    skills remain valuable across different software environments and organizations.</p>
+                                <p class="text_roboto fs-6 mb-4">Overall, SQL is a foundational language for working
+                                    with relational databases and is crucial for data management, data analysis, backend
+                                    development, and decision-making systems. Its clarity, efficiency, and widespread
+                                    adoption make it one of the most important technologies for anyone pursuing a career
+                                    in computing, analytics, or software development.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-top min-vh-100 skills_offcanvas" tabindex="-1" id="offcanvasTop12"
+            aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-2 text_georgia fw-bold" id="offcanvasTopLabel">PLSQL</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                    style="filter: invert(1) brightness(200%) !important;"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container">
+                    <div class="row vh-md-100">
+                        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+                            <div class="text-center mb-5 mb-md-0">
+                                <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763025690/WhatsApp_Image_2025-11-13_at_14.50.08_908452a5_zjyu6x.jpg"
+                                    class="w-75 w-md-100 rounded-5" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-7 col-xl-8">
+                            <div class="vh-md-100 overflow-auto" style="scrollbar-width: none;">
+                                <p class="text_roboto fs-6 mb-4">PL/SQL, or Procedural Language for SQL, is an advanced
+                                    programming extension of SQL developed by Oracle to enhance the power, efficiency,
+                                    and flexibility of database operations. While SQL is excellent for querying and
+                                    manipulating data, it is not designed for writing full programs or handling complex
+                                    business logic. PL/SQL fills this gap by adding programming capabilities such as
+                                    variables, loops, conditions, functions, procedures, exceptions, and control
+                                    structures. This allows developers to perform more sophisticated tasks directly
+                                    within the Oracle database environment. PL/SQL programs run inside the database
+                                    itself, which reduces the amount of data that needs to move between applications and
+                                    servers, resulting in faster performance and improved security. This makes PL/SQL a
+                                    core technology for building enterprise applications where reliability, consistency,
+                                    and efficiency are crucial.</p>
+                                <p class="text_roboto fs-6 mb-4">One of the major strengths of PL/SQL is its
+                                    block-structured architecture, which organizes code into logical sections that are
+                                    easy to write, maintain, and debug. Each block can contain declarations, business
+                                    logic, and error-handling routines. This structure ensures that errors can be
+                                    detected and handled gracefully, making applications more stable and user-friendly.
+                                    PL/SQL also supports modular programming through procedures, functions, and
+                                    packages. These modules allow developers to group related operations and reuse them
+                                    across multiple applications, reducing repetition and improving productivity.
+                                    Packages also make large applications easier to manage by collecting functions,
+                                    variables, constants, and business rules in a single organized unit.</p>
+                                <p class="text_roboto fs-6 mb-4">PL/SQL plays a central role in enterprise systems that
+                                    rely on Oracle databases. It is widely used in banking, finance, telecommunications,
+                                    supply chain, and government systems where data integrity and performance are
+                                    critical. With PL/SQL, developers can automate processes such as generating reports,
+                                    validating transactions, auditing activities, enforcing rules, and scheduling
+                                    background tasks. The language also integrates seamlessly with Oracle tools like
+                                    Forms, Reports, APEX, and database triggers. Triggers allow automatic actions to
+                                    occur when specific events happen in a database, such as inserting or updating data.
+                                </p>
+                                <p class="text_roboto fs-6 mb-4">Overall, PL/SQL is a powerful and essential tool for
+                                    building robust, secure, and scalable applications in Oracle environments. It
+                                    enhances SQL’s capabilities by adding procedural logic, improves performance through
+                                    database-side execution, and offers strong features for automation, modular design,
+                                    and error handling. For organizations that depend on Oracle, PL/SQL is a critical
+                                    technology that ensures smooth and efficient data processing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Portfolio Website Projects Section -->
+    <div class="portfolio_website_projects_section pt-5 pb-5" id="portfoliowebsiteprojectssection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div>
+                        <h1 class="text-warning fs-3 text_roboto mb-3">Projects</h1>
+                        <h1 class="text-white fs-1 text_georgia fw-bold mb-4">I have done</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mb-4">
+                        <div class="projects_section_projects_bg_image rounded-2 p-4 d-flex flex-column justify-content-end"
+                            style="background-image: url('https://res.cloudinary.com/dgbwlxusq/image/upload/v1763659998/Screenshot_2025-11-20_230049_h2rhtm.png');">
+                            <div>
+                                <h1 class="fs-4 text-warning text_roboto text_shadow">Virtual Reality</h1>
+                                <a href="https://vighneshsani01.github.io/virtual_reality_website" target="_blank"
+                                    class="fs-6 text_italic portfolio_website_projects_section_project_link">View
+                                    Project
+                                    -></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mb-4">
+                        <div class="projects_section_projects_bg_image rounded-2 p-4 d-flex flex-column justify-content-end"
+                            style="background-image: url('https://res.cloudinary.com/dgbwlxusq/image/upload/v1763665552/Screenshot_2025-11-21_002432_fdge9l.png');">
+                            <h1 class="fs-4 text-warning text_roboto text_shadow">Book Store</h1>
+                            <a href="https://vighneshsani01.github.io/book_store_page/" target="_blank"
+                                class="fs-6 text_italic portfolio_website_projects_section_project_link">View Project
+                                -></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mb-4">
+                        <div class="projects_section_projects_bg_image rounded-2 p-4 d-flex flex-column justify-content-end"
+                            style="background-image: url('https://res.cloudinary.com/dgbwlxusq/image/upload/v1763665552/Screenshot_2025-11-21_003208_ftocd5.png');">
+                            <h1 class="fs-4 text-warning text_roboto text_shadow">Responsive Background</h1>
+                            <a href="https://vighneshsani01.github.io/responsive_background/" target="_blank"
+                                class="fs-6 text_italic portfolio_website_projects_section_project_link">View Project
+                                -></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mb-4">
+                        <div class="projects_section_projects_bg_image rounded-2 p-4 d-flex flex-column justify-content-end"
+                            style="background-image: url('https://res.cloudinary.com/dgbwlxusq/image/upload/v1763665551/Screenshot_2025-11-21_002621_lblwae.png');">
+                            <h1 class="fs-4 text-warning text_roboto text_shadow">Responsive Boxes</h1>
+                            <a href="https://vighneshsani01.github.io/responsive_boxes/" target="_blank"
+                                class="fs-6 text_italic portfolio_website_projects_section_project_link">View Project
+                                -></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mb-4">
+                        <div class="projects_section_projects_bg_image rounded-2 p-4 d-flex flex-column justify-content-end"
+                            style="background-image: url('https://res.cloudinary.com/dgbwlxusq/image/upload/v1763665553/Screenshot_2025-11-21_003301_bugqzp.png');">
+                            <h1 class="fs-4 text-warning text_roboto text_shadow">My Projects Web Page</h1>
+                            <a href="https://vighneshsani01.github.io/my_projects_page/" target="_blank"
+                                class="fs-6 text_italic portfolio_website_projects_section_project_link">View Project
+                                -></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mb-4">
+                        <div class="projects_section_projects_bg_image rounded-2 p-4 d-flex flex-column justify-content-end"
+                            style="background-image: url('https://res.cloudinary.com/dgbwlxusq/image/upload/v1763665551/Screenshot_2025-11-21_002755_flvlye.png');">
+                            <h1 class="fs-4 text-warning text_roboto text_shadow">Favourite Store</h1>
+                            <a href="https://vighneshsani01.github.io/favourite_stores_page/" target="_blank"
+                                class="fs-6 text_italic portfolio_website_projects_section_project_link">View Project
+                                -></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mb-4">
+                        <div class="projects_section_projects_bg_image rounded-2 p-4 d-flex flex-column justify-content-end"
+                            style="background-image: url('https://res.cloudinary.com/dgbwlxusq/image/upload/v1763665553/Screenshot_2025-11-21_003416_foshie.png');">
+                            <h1 class="fs-4 text-warning text_roboto text_shadow">Programming Foundations</h1>
+                            <a href="https://vighneshsani01.github.io/foundation_page/" target="_blank"
+                                class="fs-6 text_italic portfolio_website_projects_section_project_link">View Project
+                                -></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mb-4">
+                        <div class="projects_section_projects_bg_image rounded-2 p-4 d-flex flex-column justify-content-end"
+                            style="background-image: url('https://res.cloudinary.com/dgbwlxusq/image/upload/v1763665552/Screenshot_2025-11-21_002911_nf9iw7.png');">
+                            <h1 class="fs-4 text-warning text_roboto text_shadow">Yoga</h1>
+                            <a href="https://vighneshsani01.github.io/yoga_page/" target="_blank"
+                                class="fs-6 text_italic portfolio_website_projects_section_project_link">View Project
+                                -></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mb-4">
+                        <div class="projects_section_projects_bg_image rounded-2 p-4 d-flex flex-column justify-content-end"
+                            style="background-image: url('https://res.cloudinary.com/dgbwlxusq/image/upload/v1763665551/Screenshot_2025-11-21_002949_hjrzpe.png');">
+                            <h1 class="fs-4 text-warning text_roboto text_shadow">Articles</h1>
+                            <a href="https://vighneshsani01.github.io/articles_page/" target="_blank"
+                                class="fs-6 text_italic portfolio_website_projects_section_project_link">View Project
+                                -></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="mb-4">
+                        <div class="projects_section_projects_bg_image rounded-2 p-4 d-flex flex-column justify-content-end"
+                            style="background-image: url('https://res.cloudinary.com/dgbwlxusq/image/upload/v1763665554/Screenshot_2025-11-21_003028_nmvjgu.png');">
+                            <h1 class="fs-4 text-warning text_roboto text_shadow">Flats Booking</h1>
+                            <a href="https://vighneshsani01.github.io/flats_page/" target="_blank"
+                                class="fs-6 text_italic portfolio_website_projects_section_project_link">View Project
+                                -></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="portfolio_website_service_section_bg_container pt-5 pb-5 " id="portfoliowebsiteservicesection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mb-3">
+                        <h1 class="fs-4 text-warning mb-2 fw-bold">Services</h1>
+                        <h1 class="fs-1 text-white fw-bold text_georgia">What I do</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="portfolio_website_service_section_card rounded-4 p-4 mb-4">
+                        <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/c_crop,w_670,h_670,ar_1:1/v1764398591/ChatGPT_Image_Nov_29_2025_12_12_26_PM_xgn0e9.png"
+                            class="portfolio_website_service_section_card_image mb-3" />
+                        <h1 class="fs-3 text_roboto text-white">Static Websites</h1>
+                        <p class="para_color text_roboto">A Static Website contains
+                            Web pages with fixed
+                            content. Each page is
+                            developed using HTML and
+                            CSS and displays the same
+                            information to every visitor.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="portfolio_website_service_section_card rounded-4 p-4 mb-4">
+                        <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/c_crop,w_730,h_680/v1764399915/ChatGPT_Image_Nov_29_2025_12_34_51_PM_e5au12.png"
+                            class="portfolio_website_service_section_card_image mb-3" />
+                        <h1 class="fs-3 text_roboto text-white">Responsive Web design</h1>
+                        <p class="para_color text_roboto">Responsive Web design is
+                            the approach that suggests
+                            that design and
+                            development should
+                            respond to the user's
+                            behaviour and environment
+                            based on screen size,
+                            platform and orientation.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="portfolio_website_service_section_card rounded-4 p-4 mb-4">
+                        <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/c_crop,w_880,h_840,g_auto/v1764400577/ChatGPT_Image_Nov_29_2025_12_46_03_PM_u9v2qh.png"
+                            class="portfolio_website_service_section_card_image mb-3" />
+                        <h1 class="fs-3 text_roboto text-white">Customisable Layouts</h1>
+                        <p class="para_color text_roboto">Customisable sites are
+                            templates with set layouts.
+                            You may be able to change
+                            photos and colors, but your
+                            site will look similar to
+                            many other sites due to the
+                            template.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interests Section -->
+    <div class="portfolio_website_interests_section pt-5 pb-5" id="portfoliowebsiteinterestssection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mb-4">
+                        <h1 class="text-warning fs-4 fw-bold text_roboto">Excited to learn</h1>
+                        <h1 class="text-white fw-bold fs-1 text_georgia">Interests</h1>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <!-- interests section carousel -->
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://assets.everspringpartners.com/dims4/default/fb976e9/2147483647/strip/true/crop/686x360+171+0/resize/1200x630!/quality/90/?url=http%3A%2F%2Feverspring-brightspot.s3.us-east-1.amazonaws.com%2Fdf%2Fee%2F106592af4d508f76b29662e456db%2Fadvanced-ai.jpg"
+                                    class="d-block w-100 interest_section_carousel_image" alt="...">
+                                <div class="carousel-caption d-block overflow-auto h-100 pt-5 pb-5">
+                                    <h5>Artificial Intelligence</h5>
+                                    <p>Artificial Intelligence (AI) is a branch of computer science that aims to create
+                                        machines capable of performing tasks that normally require human intelligence,
+                                        such as learning, reasoning, problem-solving, understanding language, and
+                                        recognizing patterns. It includes important fields like machine learning, deep
+                                        learning, computer vision, natural language processing, robotics, and expert
+                                        systems. Today, AI is widely used in daily life through applications such as
+                                        voice assistants, recommendation systems, self-driving cars, medical diagnosis
+                                        tools, and smart home devices. The major advantages of AI are high accuracy,
+                                        fast processing, automation of repetitive tasks, and the ability to work
+                                        continuously without fatigue.</p>
+                                    <p>However, AI also comes with disadvantages such as high development costs,
+                                        dependence on large amounts of data, potential job loss, and ethical issues like
+                                        privacy concerns. Overall, AI continues to grow rapidly and is expected to shape
+                                        the future with smarter technologies, advanced automation, and more intelligent
+                                        decision-making systems.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://tdwi.org/-/media/tdwi/tdwi/bitw/machinelearning1.jpg"
+                                    class="d-block w-100 interest_section_carousel_image" alt="...">
+                                <div class="carousel-caption d-block overflow-auto h-100 pt-5 pb-5">
+                                    <h5>Machine Learning</h5>
+                                    <p>Machine Learning (ML) is a subfield of Artificial Intelligence that focuses on
+                                        developing algorithms and systems that allow computers to learn from data and
+                                        improve their performance without being explicitly programmed. Instead of
+                                        following fixed rules, a machine learning model identifies patterns in large
+                                        amounts of information and makes predictions or decisions based on those
+                                        patterns. For example, ML powers technologies like spam detection, product
+                                        recommendations, face recognition, self-driving cars, and medical diagnosis
+                                        systems.</p>
+                                    <p>Machine learning is mainly divided into three types: supervised learning, where
+                                        models learn from labeled data; unsupervised learning, where patterns are
+                                        discovered from unlabeled data; and reinforcement learning, where an agent
+                                        learns by interacting with its environment and receiving rewards or penalties.
+                                        ML offers many benefits, including automation, accuracy, and the ability to
+                                        handle complex data, but it also requires large datasets, high computational
+                                        power, and careful tuning to avoid bias or incorrect predictions. Overall,
+                                        machine learning plays a crucial role in today’s intelligent technologies and
+                                        continues to grow as data and computing power increase.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://chanakyauniversity.edu.in/wp-content/uploads/2025/03/Data-Science-1.jpg"
+                                    class="d-block w-100 interest_section_carousel_image" alt="...">
+                                <div class="carousel-caption d-block overflow-auto h-100 pt-5 pb-5">
+                                    <h5>Data Science</h5>
+                                    <p>Data Science is a multidisciplinary field that involves collecting, analyzing,
+                                        and interpreting large amounts of data to discover meaningful patterns, generate
+                                        insights, and support decision-making. It combines knowledge from statistics,
+                                        mathematics, computer science, and domain expertise to solve real-world problems
+                                        using data. A data scientist works with structured and unstructured data,
+                                        performing tasks like data cleaning, data visualization, statistical analysis,
+                                        machine learning model building, and result interpretation. Data science is
+                                        widely used in industries such as business, healthcare, finance, marketing,
+                                        social media, cybersecurity, and e-commerce.</p>
+                                    <p>Applications include customer behavior prediction, fraud detection,
+                                        recommendation systems, medical diagnosis, and trend forecasting. The field
+                                        offers major advantages like improved decision-making, automation, and the
+                                        ability to extract valuable insights from massive datasets. However, it also
+                                        faces challenges such as data privacy concerns, the need for high-quality data,
+                                        and the requirement for strong technical expertise. Overall, data science plays
+                                        a vital role in transforming data into actionable knowledge and is becoming
+                                        essential in the modern digital world.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.cyberdb.co/wp-content/uploads/2022/12/Cybersecurity.jpg"
+                                    class="d-block w-100 interest_section_carousel_image" alt="...">
+                                <div class="carousel-caption d-block overflow-auto h-100 pt-5 pb-5">
+                                    <h5>Cyber Security</h5>
+                                    <p>Cyber Security is the practice of protecting computers, networks, data, and
+                                        digital systems from unauthorized access, attacks, damage, or theft. It involves
+                                        using technologies, tools, and processes to defend against cyber threats such as
+                                        viruses, malware, phishing, ransomware, hacking, and data breaches. Cyber
+                                        security ensures the confidentiality (keeping data private), integrity
+                                        (preventing unauthorized changes), and availability (ensuring systems work when
+                                        needed) of information.</p>
+                                    <p>This field includes several areas like network security, application security,
+                                        cloud security, cryptography, ethical hacking, and incident response. Industries
+                                        such as banking, healthcare, education, government, and e-commerce heavily rely
+                                        on cyber security to safeguard sensitive information and maintain trust. While
+                                        cyber security helps prevent financial loss, protects personal data, and keeps
+                                        systems safe, it also faces challenges like evolving cyber-attacks, shortage of
+                                        skilled professionals, and the need for continuous updates. Overall, cyber
+                                        security is essential in today’s digital world to ensure safe communication,
+                                        secure online transactions, and protection from growing cyber threats.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://schneppat.com/graphics/deep-learning-dl.jpg"
+                                    class="d-block w-100 interest_section_carousel_image" alt="...">
+                                <div class="carousel-caption d-block overflow-auto h-100 pt-5 pb-5">
+                                    <h5>Deep Learning</h5>
+                                    <p>Deep Learning is an advanced branch of Machine Learning that uses artificial
+                                        neural networks designed to mimic the human brain to learn from large amounts of
+                                        data. These neural networks contain multiple layers—hence the word “deep”—which
+                                        allow the system to automatically extract complex patterns and features without
+                                        manual programming. Deep learning is especially powerful for tasks involving
+                                        images, audio, video, and natural language because it can understand high-level
+                                        representations such as shapes in images, speech patterns in audio, or meaning
+                                        in text.</p>
+                                    <p>It is the backbone of many modern technologies, including facial recognition,
+                                        self-driving cars, voice assistants like Siri and Alexa, medical imaging
+                                        analysis, and real-time language translation. Deep learning models, such as
+                                        convolutional neural networks (CNNs), recurrent neural networks (RNNs), and
+                                        transformers, require large datasets and high computational power, often using
+                                        GPUs or cloud computing. While deep learning provides exceptional accuracy and
+                                        automation, it also has limitations like high cost, long training times, and the
+                                        need for massive data. Overall, deep learning is a key technology shaping the
+                                        future of artificial intelligence by enabling machines to understand and
+                                        interpret the world in a human-like way.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Done Section -->
+    <div class="portfolio_website_work_done_section p-5  d-flex flex-column justify-content-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-3">
+                    <div class="text-center mb-4">
+                        <i class="fa-regular fa-thumbs-up portfolio_website_work_done_section_icon"></i>
+                        <hr class="portfolio_website_work_done_section_hr">
+                        <h1 class="text-white fs-2 text_roboto">30+</h1>
+                        <p class="text-white text_roboto">Projects Completed</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="text-center mb-4">
+                        <i class="fa-regular fa-file-lines portfolio_website_work_done_section_icon"></i>
+                        <hr class="portfolio_website_work_done_section_hr">
+                        <h1 class="text-white fs-2 text_roboto">1500+</h1>
+                        <p class="text-white text_roboto">Lines of Code</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="text-center mb-4">
+                        <i class="fa-regular fa-clock portfolio_website_work_done_section_icon"></i>
+                        <hr class="portfolio_website_work_done_section_hr">
+                        <h1 class="text-white fs-2 text_roboto">72+</h1>
+                        <p class="text-white text_roboto">Hours Worked</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                    <div class="text-center mb-4">
+                        <i class="fa-brands fa-internet-explorer portfolio_website_work_done_section_icon"></i>
+                        <hr class="portfolio_website_work_done_section_hr">
+                        <h1 class="text-white fs-2 text_roboto">10+</h1>
+                        <p class="text-white text_roboto">Resources Used</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="portfolio_website_footer_section_bg_container pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <div class="d-flex flex-row mb-4">
+                        <img src="https://res.cloudinary.com/dgbwlxusq/image/upload/v1763019954/WhatsApp_Image_2025-11-13_at_13.14.19_2194c89c_rivkw1.jpg"
+                            class="footer_section_image" />
+                        <div class="d-flex flex-column justify-content-center justify-content-lg-center ms-3">
+                            <h1 class="fs-4 text_italic text-info text_shadow">Vighnesh</h1>
+                            <p class="para_color text_roboto">Frontend Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="mb-4">
+                        <h1 class="fs-4 text_roboto mb-3" style="color: #cced00;">Phone No</h1>
+                        <div class="d-flex flex-row">
+                            <i class="fa-solid fa-phone para_color fs-4"></i>
+                            <p class="para_color text_roboto ms-2">8237445797</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="mb-4">
+                        <h1 class="fs-4 text_roboto mb-3" style="color: #cced00;">Email</h1>
+                        <div class="d-flex flex-row">
+                            <i class="fa-solid fa-envelope para_color fs-4"></i>
+                            <a class="para_color text_roboto ms-2" href="mailto:vighneshsani01@gmail.com">
+                                <p>vighneshsani01@gmail.com</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="mb-4">
+                        <h1 class="fs-4 text_roboto mb-3" style="color: #cced00;">Address</h1>
+                        <div class="d-flex flex-row">
+                            <i class="fa-solid fa-location-dot para_color fs-4"></i>
+                            <p class="para_color text_roboto ms-2">Solapur-413005</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-4" style="background-color: #001c32;">
+            <h1 class="para_color fs-5 text_roboto text-center">@2025 by Vighnesh Sani. Created with Sunrise Avenue.
+            </h1>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Contact Me Toast JS section-->
+    <script>
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+
+        if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const helloToast = document.getElementById('helloToast');
+            const toastBootstrap = new bootstrap.Toast(helloToast, { autohide: false });
+            toastBootstrap.show();
+        });
+    </script>
+</body>
+
+</html>
