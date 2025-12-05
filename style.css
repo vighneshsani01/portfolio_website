@@ -2,7 +2,7 @@ html,
 body {
     margin: 0px;
     padding: 0px;
-    scrollbar-width: none;
+    scrollbar-width: none !important;
 }
 
 html {
@@ -23,15 +23,15 @@ button {
     border-radius: 50px;
 }
 
-.portfolio_website_navbar_links:hover{
-    background-color: #FFFFFF1A; 
-    backdrop-filter: blur(1px); 
+.portfolio_website_navbar_links:hover {
+    background-color: #FFFFFF1A;
+    backdrop-filter: blur(1px);
     border-radius: 5px;
 }
 
 .portfolio_website_navbar {
-    background-color: #0000001A; 
-    backdrop-filter: blur(10px); 
+    background-color: #0000001A;
+    backdrop-filter: blur(10px);
 }
 
 .portfolio_website_banner_section {
@@ -69,8 +69,8 @@ button {
 }
 
 .skills_offcanvas {
-    background-color: #0000001A !important; 
-    backdrop-filter: blur(40px) !important; 
+    background-color: #0000001A !important;
+    backdrop-filter: blur(40px) !important;
     color: white !important;
     filter: brightness(175%) !important;
 }
